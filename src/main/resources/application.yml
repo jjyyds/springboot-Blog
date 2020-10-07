@@ -1,0 +1,17 @@
+server: 
+  port: 80
+
+spring: 
+  datasource: 
+    url: jdbc:mysql://localhost:3306/springboot-blog?serverTimezone=UTC&CharacterEncoding=UTF-8&useSSL=false
+    username: root
+    password: a
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging: 
+  level: 
+    com.yc.springbootBlog.dao: debug
+
+mybatis: 
+  configuration: 
+    map-underscore-to-camel-case: true
